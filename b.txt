@@ -1,0 +1,129 @@
+
+Autowirable Types
+=================
+
+ The following classes & interfaces can be used as type-hints when autowiring:
+ 
+ App\Controller\ArticleController
+ 
+ App\Service\MarkdownHelper
+ 
+ Interface for annotation readers.
+ Doctrine\Common\Annotations\Reader (annotations.cached_reader)
+ 
+ EasyCorp\EasyLog\EasyLogHandler
+ 
+ Knp\Bundle\MarkdownBundle\MarkdownParserInterface (markdown.parser.light)
+ 
+ Markdown Parser Interface
+ Michelf\MarkdownInterface (markdown.parser.light)
+ 
+ CacheItemPoolInterface generates CacheItemInterface objects.
+ Psr\Cache\CacheItemPoolInterface (cache.app)
+ 
+ Describes the interface of a container that exposes methods to read its entries.
+ Psr\Container\ContainerInterface (service_container)
+ Psr\Container\ContainerInterface $parameterBag (parameter_bag)
+ 
+ Describes a logger instance.
+ Psr\Log\LoggerInterface (monolog.logger)
+ 
+ Psr\SimpleCache\CacheInterface (cache.app.simple)
+ 
+ SensioLabs\Security\Command\SecurityCheckerCommand
+ 
+ SensioLabs\Security\SecurityChecker
+ 
+ SessionHandlerInterface (session.handler)
+ 
+ Redirects a request to another URL.
+ Symfony\Bundle\FrameworkBundle\Controller\RedirectController
+ 
+ TemplateController.
+ Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+ 
+ Helps manage asset URLs.
+ Symfony\Component\Asset\Packages (assets.packages)
+ 
+ Interface for adapters managing instances of Symfony's CacheItem.
+ Symfony\Component\Cache\Adapter\AdapterInterface (cache.app)
+ 
+ ContainerInterface is the interface implemented by service container classes.
+ Symfony\Component\DependencyInjection\ContainerInterface (service_container)
+ 
+ ContainerBagInterface is the interface implemented by objects that manage service container parameters.
+ Symfony\Component\DependencyInjection\ParameterBag\ContainerBagInterface (parameter_bag)
+ 
+ ParameterBagInterface is the interface implemented by objects that manage service container parameters.
+ Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface (parameter_bag)
+ 
+ Turns public and "container.reversible" services back to their ids.
+ Symfony\Component\DependencyInjection\ReverseContainer (reverse_container)
+ 
+ The EventDispatcherInterface is the central point of Symfony's event listener system. Listeners are registered on the manager and events are dispatched through the manager.
+ Symfony\Component\EventDispatcher\EventDispatcherInterface (debug.event_dispatcher)
+ 
+ Provides basic utility to manipulate the file system.
+ Symfony\Component\Filesystem\Filesystem (filesystem)
+ 
+ Request stack that controls the lifecycle of requests.
+ Symfony\Component\HttpFoundation\RequestStack (request_stack)
+ 
+ FlashBagInterface.
+ Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface (session.flash_bag)
+ 
+ Interface for the session.
+ Symfony\Component\HttpFoundation\Session\SessionInterface (session)
+ 
+ StorageInterface.
+ Symfony\Component\HttpFoundation\Session\Storage\SessionStorageInterface (session.storage.native)
+ 
+ A helper service for manipulating URLs within and outside the request scope.
+ Symfony\Component\HttpFoundation\UrlHelper (url_helper)
+ 
+ FileLocator uses the KernelInterface to locate resources in bundles.
+ Symfony\Component\HttpKernel\Config\FileLocator (file_locator)
+ 
+ Formats debug file links.
+ Symfony\Component\HttpKernel\Debug\FileLinkFormatter (debug.file_link_formatter)
+ 
+ HttpKernelInterface handles a Request to convert it to a Response.
+ Symfony\Component\HttpKernel\HttpKernelInterface (http_kernel)
+ 
+ The Kernel is the heart of the Symfony system.
+ Symfony\Component\HttpKernel\KernelInterface (kernel)
+ 
+ UrlGeneratorInterface is the interface that all URL generator classes must implement.
+ Symfony\Component\Routing\Generator\UrlGeneratorInterface (router.default)
+ 
+ UrlMatcherInterface is the interface that all URL matcher classes must implement.
+ Symfony\Component\Routing\Matcher\UrlMatcherInterface (router.default)
+ 
+ Holds information about the current request.
+ Symfony\Component\Routing\RequestContext (router.request_context)
+ 
+ Symfony\Component\Routing\RequestContextAwareInterface (router.default)
+ 
+ RouterInterface is the interface that all Router classes must implement.
+ Symfony\Component\Routing\RouterInterface (router.default)
+ 
+ Stopwatch provides a way to profile code.
+ Symfony\Component\Stopwatch\Stopwatch (debug.stopwatch)
+ 
+ Covers most simple to advanced caching needs.
+ Symfony\Contracts\Cache\CacheInterface (cache.app)
+ 
+ Allows invalidating cached items using tags.
+ Symfony\Contracts\Cache\TagAwareCacheInterface (cache.app.taggable)
+ 
+ Allows providing hooks on domain-specific lifecycles by dispatching events.
+ Symfony\Contracts\EventDispatcher\EventDispatcherInterface (debug.event_dispatcher)
+ 
+ Provides flexible methods for requesting HTTP resources synchronously or asynchronously.
+ Symfony\Contracts\HttpClient\HttpClientInterface (http_client)
+ 
+ Stores the Twig configuration.
+ Twig\Environment (twig)
+
+ Pro-tip: use interfaces in your type-hints instead of classes to benefit from the dependency inversion principle.
+

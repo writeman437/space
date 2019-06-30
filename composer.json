@@ -14,7 +14,6 @@
         "symfony/framework-bundle": "4.3.*",
         "symfony/maker-bundle": "^1.11",
         "symfony/twig-bundle": "4.3.*",
-        "symfony/web-server-bundle": "4.3.*",
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {
@@ -23,7 +22,8 @@
         "symfony/debug-bundle": "*",
         "symfony/monolog-bundle": "^3.0",
         "symfony/profiler-pack": "*",
-        "symfony/var-dumper": "*"
+        "symfony/var-dumper": "*",
+        "symfony/web-server-bundle": "4.3.*"
     },
     "config": {
         "preferred-install": {
